@@ -1,0 +1,185 @@
+:root {
+  --color-primary: #581845;
+  --color-primary-light: #7950f2;
+  --color-text: #dee2e6;
+  --color-text-dark: #adb5bd;
+  --color-background-100: #343a40;
+  --color-background-500: #2b3035;
+  --color-background-900: #212529;
+  --color-red: #fa5252;
+  --color-red-dark: #e03131;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  color: var(--color-text);
+  background-color: var(--color-background-900);
+}
+.header {
+  display: grid;
+  grid-template-columns: 0fr 0fr 3fr;
+  align-items: center;
+  height: 4.1rem;
+  padding: 0 0.4rem;
+  background-color: var(--color-primary);
+  border-radius: 0.3rem;
+}
+
+.search {
+  position: relative;
+  left: 28rem;
+  border: none;
+  padding: 0.2rem 1rem;
+  font-size: 1.3rem;
+  border-radius: 0.9rem;
+  width: 40rem;
+  transition: all 0.3s;
+  color: var(--color-background-900);
+}
+.search:focus {
+  outline: none;
+  box-shadow: 0 2.4rem 2.4rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.search::placeholder {
+  color: var(--color-background-100);
+}
+
+.language {
+  color: #212529;
+  display: flex;
+  position: absolute;
+  left: 88rem;
+}
+#languageDropdown {
+  outline: none;
+  background-color: var(--color-text);
+  border-radius: 20px;
+  border: none;
+  padding: 0.2rem;
+  margin: 10px;
+  border: none;
+}
+
+.logo {
+  width: 100px;
+  height: 20px;
+}
+
+img {
+  height: 130px;
+  justify-self: left;
+  width: 130px;
+  position: absolute;
+  bottom: 39.2rem;
+  right: 111.5rem;
+}
+
+.signin {
+  position: absolute;
+  right: 10rem;
+  font-size: 12px;
+}
+
+#signinbtn {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: var(--color-text);
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+}
+
+#productbtn {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: var(--color-text);
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  text-decoration: underline;
+  transition: 0.5 s;
+}
+
+#cart {
+  position: absolute;
+  right: 2rem;
+  height: 70px;
+  width: 70px;
+  top: 0rem;
+}
+a {
+  position: absolute;
+  right: 2rem;
+  height: 70px;
+  width: 70px;
+  top: 0rem;
+}
+
+#signinform {
+  position: absolute;
+  top: 4.1rem;
+  right: -0.2rem;
+  box-sizing: border-box;
+  background-color: var(--color-background-100);
+  width: 14rem;
+  height: 15rem;
+  line-height: 20px;
+  padding: 2px 10px 10px;
+  border-radius: 4px;
+}
+
+#signinform label {
+  color: white;
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 20px;
+  padding: 2px 0px 2px;
+}
+
+#signinform input {
+  width: 11rem;
+  height: 2rem;
+  border: none;
+  background: white;
+  font-size: 14px;
+  outline: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 20px;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+#signupbtn {
+  border: none;
+  position: absolute;
+  top: 11.2rem;
+  right: 5.5rem;
+  width: 60px;
+  outline: none;
+  border-radius: 20px;
+  height: 1.2rem;
+  background-color: transparent;
+  font-weight: bold;
+  color: var(--color-text);
+  cursor: pointer;
+}
