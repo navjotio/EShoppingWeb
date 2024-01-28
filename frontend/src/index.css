@@ -169,17 +169,28 @@ a {
   padding: 4px;
 }
 
-#signupbtn {
-  border: none;
+.button-box {
+  display: flex;
+  gap: 30px;
   position: absolute;
-  top: 11.2rem;
-  right: 5.5rem;
-  width: 60px;
-  outline: none;
-  border-radius: 20px;
-  height: 1.2rem;
-  background-color: transparent;
-  font-weight: bold;
+  top: 12.2rem;
+}
+
+.formbtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 30px;
   color: var(--color-text);
+  background: var(--color-primary);
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
   cursor: pointer;
+  border: none;
+}
+
+.gray {
+  background: var(--color-background-900);
 }
