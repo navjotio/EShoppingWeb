@@ -1,9 +1,9 @@
 import image from "./logo.png";
-
+import "./logo.css";
 function Logo() {
   return (
     <span className="logo">
-      <img src={image} alt=""></img>
+      <img id="logoID" src={image} alt=""></img>
     </span>
   );
 }
