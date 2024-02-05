@@ -6,7 +6,7 @@ function Hero() {
       <div className="hero-left">
         <h2>Shop Electronics</h2>
         <p>
-          New Collections for <br></br>everyone
+          New collections for <br></br>everyone
         </p>
       </div>
       <div className="hero-right">

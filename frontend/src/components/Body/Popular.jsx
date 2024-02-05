@@ -32,8 +32,8 @@ function Items(props) {
         <span></span>
         <span></span>
         <span></span>
+
         <img id="popularID" src={props.image} alt=""></img>
-        <p>{props.name}</p>
         <div className="itemprices">
           <div className="itemprices-new">${props.newPrice}</div>
           <div className="itemprices-old">${props.oldPrice}</div>
