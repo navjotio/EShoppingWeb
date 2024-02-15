@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hero from "./components/Body/hero";
 import PopularProducts from "./components/Body/Popular";
 import Offers from "./components/Body/offers";
+import NewsLetter from "./components/Body/newsLetter";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Hero></Hero>
         <PopularProducts />
         <Offers />
+        <NewsLetter />
       </MainBody>
       <MainFooter></MainFooter>
     </div>
