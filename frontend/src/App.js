@@ -9,10 +9,11 @@ import Hero from "./components/Body/hero";
 import PopularProducts from "./components/Body/Popular";
 import Offers from "./components/Body/offers";
 import NewsLetter from "./components/Body/newsLetter";
+import Footer from "./components/Footer/footer";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <MainHeader>
         <Logo></Logo>
         <Heading></Heading>
@@ -27,7 +28,9 @@ function App() {
         <Offers />
         <NewsLetter />
       </MainBody>
-      <MainFooter></MainFooter>
+      <MainFooter>
+        <Footer />
+      </MainFooter>
     </div>
   );
 }
