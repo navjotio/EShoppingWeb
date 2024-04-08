@@ -1,0 +1,20 @@
+{
+  "header": {
+    "products": "Products",
+    "signin": "Sign Up/ Member"
+  },
+  "hero": {
+    "heading": "Shop Electronics",
+    "body": "New collections for everyone ",
+    "btn": "Latest Collection"
+  },
+  "popular": {
+    "heading": "Popular Today"
+  },
+  "footer": {
+    "l1": "Products",
+    "l2": "Offices",
+    "l3": "About",
+    "l4": "Contact"
+  }
+}

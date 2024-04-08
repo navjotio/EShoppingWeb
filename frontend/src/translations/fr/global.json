@@ -1,0 +1,20 @@
+{
+  "header": {
+    "products": "Produits",
+    "signin": "S'inscrire/ Membre"
+  },
+  "hero": {
+    "heading": "Achetez des électroniques",
+    "body": "Nouvelles collections pour tous",
+    "btn": "La dernière collection"
+  },
+  "popular": {
+    "heading": " Populaire aujourd'hui"
+  },
+  "footer": {
+    "l1": "Produits",
+    "l2": "Bureaux",
+    "l3": " À propos",
+    "l4": "Contact"
+  }
+}

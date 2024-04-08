@@ -1,0 +1,20 @@
+{
+  "header": {
+    "products": "Producten",
+    "signin": "Sign Up/ Member"
+  },
+  "hero": {
+    "heading": "elektronica kopen",
+    "body": "nieuwe collecties voor iedereen",
+    "btn": "Laatste collectie"
+  },
+  "popular": {
+    "heading": "Populair vandaag"
+  },
+  "footer": {
+    "l1": "Producten",
+    "l2": "Kantoren",
+    "l3": "Over",
+    "l4": "Contact"
+  }
+}
