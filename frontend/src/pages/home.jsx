@@ -1,6 +1,6 @@
-import NavBar from "./header/navbar";
-import MainDisplay from "./Body/mainbody";
-import Footer from "./Footer/footer";
+import NavBar from "../components/header/navbar";
+import MainDisplay from "../components/Body/mainbody";
+import Footer from "../components/Footer/footer";
 
 export default function Home() {
   return (
