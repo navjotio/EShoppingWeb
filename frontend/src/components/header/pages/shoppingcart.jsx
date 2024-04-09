@@ -2,11 +2,9 @@ import cart from "../images/cart.png";
 import "../styles/shoppingcart.css";
 
 function ShoppingCart() {
-  function handleCartClick(e) {
-    e.preventDefault();
-  }
+  function handleCartClick(e) {}
   return (
-    <a href="#" onClick={handleCartClick} id>
+    <a href={cart.jsx} onClick={handleCartClick} id>
       <img id="cart" src={cart} alt=""></img>
     </a>
   );

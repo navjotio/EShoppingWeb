@@ -19,14 +19,6 @@ export default function Home() {
 }
 
 function MainHeader({ children }) {
-  // const [activeHeader, setActiveHeader] = useState(false);
-  // window.addEventListener("scroll", function () {
-  //   if (this.window.scrollY > 100) {
-  //     setActiveHeader(true);
-  //   } else {
-  //     setActiveHeader(false);
-  //   }
-  // });
   return <nav className="header">{children}</nav>;
 }
 
