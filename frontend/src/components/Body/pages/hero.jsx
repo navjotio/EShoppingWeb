@@ -1,8 +1,10 @@
 import { useTranslation } from "react-i18next";
 import iphoneMainImg from "../images/IphoneMainPage.png";
 import "../styles/hero.css";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+  const navigation = useNavigate();
   const [t, i18n] = useTranslation("global");
   return (
     <div className="hero">
@@ -16,7 +18,12 @@ function Hero() {
         </div>
       </div>
       <div className="latestbtn">
-        <button id="latestcollbtn">{t("hero.btn")}→</button>
+        <button
+          id="latestcollbtn"
+          onClick={() => navigation("latestcollection")}
+        >
+          {t("hero.btn")}→
+        </button>
       </div>
     </div>
   );

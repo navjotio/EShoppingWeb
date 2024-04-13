@@ -1,8 +1,8 @@
-import p1image from "./p1image.png";
-import p2image from "./p2image.png";
-import p3image from "./p3image.png";
-import p4image from "./p4image.png";
-import p5image from "./p5image.png";
+import p1image from "./images/p1image.png";
+import p2image from "./images/p2image.png";
+import p3image from "./images/p3image.png";
+import p4image from "./images/p4image.png";
+import p5image from "./images/p5image.png";
 const PopularProducts_Data = [
   {
     id: 1,

@@ -1,10 +1,12 @@
 import cart from "../images/cart.png";
 import "../styles/shoppingcart.css";
+import { useNavigate } from "react-router-dom";
 
 function ShoppingCart() {
-  function handleCartClick(e) {}
+  const navigation = useNavigate();
+
   return (
-    <a href={cart.jsx} onClick={handleCartClick} id>
+    <a href="" onClick={() => navigation("cart")} id>
       <img id="cart" src={cart} alt=""></img>
     </a>
   );
