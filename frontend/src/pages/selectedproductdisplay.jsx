@@ -1,14 +1,16 @@
+import ReusableItems from "./reuseableitem";
 import "./styles/selectedproductdisplay.css";
 
-export default function SelectedProductDisplay(props) {
+const SelectedProductDisplay = (props) => {
   const { product } = props;
   return (
     <div className="prodDisplay">
       <div className="prodDisplay-left">
-        <div className="prodDisplay-imglist">
-          <img src={props.image} alt="" />
-        </div>
+        <div className="prodDisplay-imglist"></div>
+        <h1>{product.price}</h1>
       </div>
     </div>
   );
-}
+};
+
+export default SelectedProductDisplay;

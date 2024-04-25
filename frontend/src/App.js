@@ -17,8 +17,9 @@ function App() {
             path="/latestcollection"
             element={<Latestcollection />}
           />
-          <Route exact path="/product" element={<DisplayProduct />} />
-          <Route exact path=":productID" element={<DisplayProduct />} />
+          <Route exact path="/product" element={<DisplayProduct />}>
+            <Route exact path=":productID" element={<DisplayProduct />} />
+          </Route>
         </Routes>
       </Router>
     </div>

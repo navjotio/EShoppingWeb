@@ -62,7 +62,10 @@ function ProductItems(props) {
         <FaShoppingCart className="productshoppingcart" />
         <FaRegBookmark className="productsbookmark" />
         <FaFireAlt className="productsfirealt" />
-        <img src={props.image} id="ProductID" alt=""></img>
+        <Link to={`/product/${props.id}`}>
+          {" "}
+          <img src={props.image} id="ProductID" alt=""></img>
+        </Link>
         <p>{props.name}</p>
         <h1 style={{ fontSize: "20px" }}>${props.price}</h1>
         <div className="productRating">

@@ -1,6 +1,5 @@
 import { createContext } from "react";
 import Products_Data from "../Assets/productsdata";
-
 export const ShopContext = createContext(null);
 
 const ShopContextProvider = (props) => {
