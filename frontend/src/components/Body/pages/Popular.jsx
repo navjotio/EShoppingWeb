@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PopularProducts_Data from "../../../Assets/PopularData";
 import "../styles/Popular.css";
 import { useTranslation } from "react-i18next";

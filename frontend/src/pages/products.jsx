@@ -1,11 +1,21 @@
-import Products_Data from "../Assets/productsdata";
 import NavBar from "../components/header/navbar";
+import Products_Data from "../Assets/productsdata";
 import "./styles/products.css";
 import Video1 from "../Assets/Banner.mp4";
+import ShoppingCart from "../components/header/pages/shoppingcart";
+import {
+  FaShoppingCart,
+  FaRegBookmark,
+  FaStar,
+  FaFireAlt,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 export function Products() {
   return (
     <div>
       {/* <NavBar /> */}
+      {<ShoppingCart />}
       <Banner />
       <h1
         style={{
@@ -28,6 +38,7 @@ export function Products() {
               price={items.price}
               condition={items.condition}
               capacity={items.capacity}
+              rating={items.rating}
             />
           );
         })}
@@ -46,10 +57,19 @@ function Banner() {
 
 function ProductItems(props) {
   return (
-    <div>
-      <div className="productItems">
+    <div className="productItems">
+      <div className="productCard">
+        <FaShoppingCart className="productshoppingcart" />
+        <FaRegBookmark className="productsbookmark" />
+        <FaFireAlt className="productsfirealt" />
         <img src={props.image} id="ProductID" alt=""></img>
         <p>{props.name}</p>
+        <h1 style={{ fontSize: "20px" }}>${props.price}</h1>
+        <div className="productRating">
+          {[...Array(props.rating)].map((index) => (
+            <FaStar id={index + 1} key={index} />
+          ))}
+        </div>
       </div>
     </div>
   );

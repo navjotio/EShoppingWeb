@@ -11,8 +11,17 @@
 }
 
 #ProductID {
-  width: 200px;
+  width: 190px;
   height: 200px;
+  position: relative;
+  left: 3rem;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: 12rem;
+  row-gap: 10px;
 }
 
 video {
@@ -23,45 +32,65 @@ video {
 }
 
 .productItems {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  margin-top: 12px;
-  padding: 25px;
   transition: all 1s;
-  overflow: hidden;
+  margin-top: 2rem;
+  padding: 20px;
+  cursor: pointer;
 }
 
-.productItems:hover {
-  background-color: var(--color-background-900s);
+.productCard {
+  position: relative;
+  background-color: transparent;
+  margin: 1rem;
+  height: 18rem;
+  width: 18.5rem;
 }
 
-/* .items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  height: 90vh;
-} */
-
-.items hr {
-  width: 220px;
-  height: 6px;
-  border-radius: 10px;
-  background: var(--color-text);
-  outline: none;
-}
-
-.items {
-  margin-top: 20px;
-  display: flex;
-  gap: 50px;
+.productCard:hover {
+  background-color: var(--color-red-dark);
+  transform: translateY(-0.5rem);
+  box-shadow: 0.1rem 0.75rem 1.5rem #bbbbbbbb;
+  border-radius: 20px;
+  transition: 0.4s;
+  color: black;
 }
 
 .productItems p {
   display: flex;
-  justify-content: center;
   margin: 4px 1%;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.productshoppingcart {
+  position: absolute;
+  right: 0;
+  margin: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.productsbookmark {
+  position: absolute;
+  right: 2rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.productsbookmark:hover {
+  fill: goldenrod;
+}
+
+.productsfirealt {
+  position: absolute;
+  font-size: 1.5rem;
+  left: 0.4rem;
+  margin: 1rem;
+}
+
+.productsfirealt:hover {
+  fill: goldenrod;
+  cursor: pointer;
 }

@@ -14,6 +14,9 @@ const Products_Data = [
     condition: "New",
     capacity: ["128GB", "256GB", "512GB"],
     image: mImage1,
+    incart: false,
+    count: 1,
+    rating: 5,
   },
   {
     id: 2,
@@ -25,6 +28,9 @@ const Products_Data = [
     capacity: ["128GB", "256GB", "512GB", "1TB"],
     condition: "New",
     image: mImage2,
+    incart: false,
+    count: 1,
+    rating: 5,
   },
   {
     id: 3,
@@ -34,6 +40,9 @@ const Products_Data = [
     price: "1500",
     condition: "New",
     image: mImage3,
+    incart: false,
+    count: 1,
+    rating: 5,
   },
 
   {
@@ -44,15 +53,32 @@ const Products_Data = [
     price: "875",
     condition: "New ",
     image: mImage4,
+    incart: false,
+    count: 1,
+    rating: 5,
   },
 
   {
     id: 5,
-    name: "GIGABYTE Windforce GEforce RTX 4070 12GB",
+    name: "GIGABYTE GEForce RTX 4070 12GB",
     description: "DR6X PCI Express 4.0 x16 ATX Video Card GV-N4070WF3OC-12GD",
     price: "850",
     condition: "New ",
     image: mImage5,
+    incart: false,
+    count: 1,
+    rating: 5,
+  },
+  {
+    id: 6,
+    name: "",
+    description: "DR6X PCI Express 4.0 x16 ATX Video Card GV-N4070WF3OC-12GD",
+    price: "850",
+    condition: "New ",
+    image: mImage5,
+    incart: false,
+    count: 1,
+    rating: 5,
   },
 ];
 
