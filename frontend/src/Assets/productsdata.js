@@ -12,7 +12,7 @@ const Products_Data = [
     color: ["Gold", "Graphite", "Silver", "Blue"],
     price: "900",
     condition: "New",
-    capacity: ["128GB", "256GB", "512GB"],
+    capacity: `Variant:  128GB , 256GB , 512GB,`,
     image: mImage1,
     incart: false,
     count: 1,
@@ -25,7 +25,7 @@ const Products_Data = [
       "The iPhone 14 Pro Max comes with 6.7-inch OLED display with 120Hz refresh rate and Apple's improved Bionic A16 processor. On the back there is a Triple camera setup with 48MP main camera.",
     color: ["Natural", "Black", "Blue"],
     price: "1500",
-    capacity: ["128GB", "256GB", "512GB", "1TB"],
+    capacity: `Variant:  128GB , 256GB , 512GB, 1TB`,
     condition: "New",
     image: mImage2,
     incart: false,
@@ -49,7 +49,7 @@ const Products_Data = [
     id: 4,
     name: "Intel Core i9-13900KS",
     description:
-      "Core i9 13th Gen Raptor Lake 24-Core (8P+16E) 3.2 GHz LGA 1700 - Intel UHD Graphics 770 - Unlocked Desktop Processor - BX8071513900KS",
+      "Core i9 13th Gen Raptor Lake 24-Core (8P+16E) 3.2 GHz LGA 1700 - Intel UHD Graphics 770 - Unlocked Desktop Processor BX8071513900KS. It is part of the Core i9 lineup, using the Raptor Lake architecture with Socket 1700. Intel Hyper-Threading technology is available and effectly doubles the core-count of the P-Cores, to a total of 32 threads.",
     price: "875",
     condition: "New ",
     image: mImage4,
@@ -61,7 +61,8 @@ const Products_Data = [
   {
     id: 5,
     name: "GIGABYTE GEForce RTX 4070 12GB",
-    description: "DR6X PCI Express 4.0 x16 ATX Video Card GV-N4070WF3OC-12GD",
+    description:
+      "DR6X PCI Express 4.0 x16 ATX Video Card GV-N4070WF3OC-12GD. Built on the 5 nm process, and based on the AD104 graphics processor, in its AD104-250-A1 variant, the card supports DirectX 12 Ultimate.",
     price: "850",
     condition: "New ",
     image: mImage5,

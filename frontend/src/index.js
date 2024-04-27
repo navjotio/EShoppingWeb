@@ -27,11 +27,9 @@ i18next.init({
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <I18nextProvider i18n={i18next}>
-    <StrictMode>
-      <ShopContextProvider>
-        <App />
-      </ShopContextProvider>
-    </StrictMode>
-  </I18nextProvider>
+  <ShopContextProvider>
+    <I18nextProvider i18n={i18next}>
+      <App />
+    </I18nextProvider>
+  </ShopContextProvider>
 );

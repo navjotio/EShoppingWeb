@@ -12,13 +12,14 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/products" element={<Products />} />
           <Route exact path="/cart" element={<CartMain />} />
+
           <Route
             exact
             path="/latestcollection"
             element={<Latestcollection />}
           />
-          <Route exact path="/product" element={<DisplayProduct />}>
-            <Route exact path=":productID" element={<DisplayProduct />} />
+          <Route path="/product" element={<DisplayProduct />}>
+            <Route path=":Id" element={<DisplayProduct />} />
           </Route>
         </Routes>
       </Router>

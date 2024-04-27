@@ -3,6 +3,7 @@ import Products_Data from "../Assets/productsdata";
 import "./styles/products.css";
 import Video1 from "../Assets/Banner.mp4";
 import ShoppingCart from "../components/header/pages/shoppingcart";
+
 import {
   FaShoppingCart,
   FaRegBookmark,
@@ -15,7 +16,9 @@ export function Products() {
   return (
     <div>
       {/* <NavBar /> */}
-      {<ShoppingCart />}
+
+      <ShoppingCart />
+
       <Banner />
       <h1
         style={{

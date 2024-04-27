@@ -1,9 +1,29 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 import Products_Data from "../Assets/productsdata";
+
 export const ShopContext = createContext(null);
 
+const getDefaultCart = () => {
+  let cart = {};
+  for (let index = 0; index < Products_Data.length + 1; index++) {
+    cart[index] = 0;
+  }
+  return cart;
+};
+
 const ShopContextProvider = (props) => {
-  const contextValue = { Products_Data };
+  const [cartItems, setCartItems] = useState(getDefaultCart());
+
+  const addToCart = (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+    console.log(cartItems);
+  };
+
+  const removeFromCart = (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+  };
+
+  const contextValue = { Products_Data, cartItems, addToCart, removeFromCart };
   return (
     <ShopContext.Provider value={contextValue}>
       {props.children}
