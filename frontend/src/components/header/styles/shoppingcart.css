@@ -17,3 +17,19 @@
   top: -0.1rem;
   filter: invert(100%);
 }
+
+.cartcount {
+  position: absolute;
+  right: 3.2rem;
+  top: 0.2rem;
+  background: goldenrod;
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  padding: 1px 7px;
+  font-weight: 700;
+  color: var(--color-primary);
+}

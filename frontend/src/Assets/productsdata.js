@@ -3,6 +3,8 @@ import mImage2 from "./images/mImage2.png";
 import mImage3 from "./images/mImage3.png";
 import mImage4 from "./images/mImage4.png";
 import mImage5 from "./images/mImage5.png";
+import mImage6 from "./images/mImage6.png";
+import mImage7 from "./images/mImage7.png";
 const Products_Data = [
   {
     id: 1,
@@ -72,11 +74,24 @@ const Products_Data = [
   },
   {
     id: 6,
-    name: "",
-    description: "DR6X PCI Express 4.0 x16 ATX Video Card GV-N4070WF3OC-12GD",
-    price: 850,
+    name: "JBL Bar 5.1 550-Watt",
+    description:
+      "Bring everything you watch to life with 550 Watts of power and a 10' subwoofer: the driving bass of an action movie, the tension of a thriller or the beauty of a nature documentary. Built-in Chromecast and Airplay 2 lets you stream and manage online content, and Bluetooth means your streamed music sounds great, too.",
+    price: 650,
     condition: "New",
-    image: mImage5,
+    image: mImage6,
+    incart: false,
+    count: 1,
+    rating: 5,
+  },
+  {
+    id: 7,
+    name: "JBL Bar 5.1 550-Watt",
+    description:
+      "Bring everything you watch to life with 550 Watts of power and a 10' subwoofer: the driving bass of an action movie, the tension of a thriller or the beauty of a nature documentary. Built-in Chromecast and Airplay 2 lets you stream and manage online content, and Bluetooth means your streamed music sounds great, too.",
+    price: 650,
+    condition: "New",
+    image: mImage7,
     incart: false,
     count: 1,
     rating: 5,
