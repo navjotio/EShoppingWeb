@@ -11,6 +11,8 @@ import {
   FaFireAlt,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { ShopContext } from "../Context/shopcontext";
 
 export function Products() {
   return (
@@ -59,10 +61,14 @@ function Banner() {
 }
 
 function ProductItems(props) {
+  const { addToCart } = useContext(ShopContext);
   return (
     <div className="productItems">
       <div className="productCard">
-        <FaShoppingCart className="productshoppingcart" />
+        <FaShoppingCart
+          className="productshoppingcart"
+          onClick={() => addToCart(props.id)}
+        ></FaShoppingCart>
         <FaRegBookmark className="productsbookmark" />
         <FaFireAlt className="productsfirealt" />
         <Link to={`/product/${props.id}`}>
