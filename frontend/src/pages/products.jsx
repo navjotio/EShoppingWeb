@@ -66,7 +66,6 @@ function ProductItems(props) {
         <FaRegBookmark className="productsbookmark" />
         <FaFireAlt className="productsfirealt" />
         <Link to={`/product/${props.id}`}>
-          {" "}
           <img src={props.image} id="ProductID" alt=""></img>
         </Link>
         <p>{props.name}</p>

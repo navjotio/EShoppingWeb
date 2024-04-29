@@ -9,6 +9,7 @@ const SelectedProductDisplay = (props) => {
   const { addToCart } = useContext(ShopContext);
   return (
     <div className="prodDisplay">
+      <ShoppingCart />
       <div className="prodDisplay-left">
         <div className="prodDisplay-imglist">
           <img src={product.image} alt="" style={{ height: "164px" }}></img>

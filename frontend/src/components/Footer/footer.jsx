@@ -4,6 +4,7 @@ import pinteresticon from "./icons/pinteresticon.png";
 import instagramicon from "./icons/instagramicon.png";
 import facebookicon from "./icons/facebookicon.png";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const [t, i18n] = useTranslation("global");
@@ -18,7 +19,12 @@ function Footer() {
           <p>ShopHub•</p>
         </div>
         <ul className="footerlinks">
-          <li>{t("footer.l1")}</li>
+          <Link
+            to={"/products"}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <li>{t("footer.l1")}</li>
+          </Link>
           <li>{t("footer.l2")}</li>
           <li>{t("footer.l3")}</li>
           <li>{t("footer.l4")}</li>

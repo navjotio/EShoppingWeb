@@ -10,7 +10,8 @@ export default function CartMain() {
 }
 
 function CartItems() {
-  const { Products_Data, cartItems, removeFromCart } = useContext(ShopContext);
+  const { Products_Data, cartItems, removeFromCart, addToCart } =
+    useContext(ShopContext);
   return (
     <div className="cartitems">
       <div className="caritems-main">
@@ -31,7 +32,13 @@ function CartItems() {
                 <p>{e.name}</p>
                 <p>${e.price}</p>
                 <button className="cartquantity">{cartItems[e.id]}</button>
-                <p>{e.price * cartItems[e.id]}</p>
+                <button
+                  className="cartaddquantity"
+                  onClick={() => addToCart(e.id)}
+                >
+                  Add more
+                </button>
+                <p>${e.price * cartItems[e.id]}</p>
                 <button id="removeID" onClick={() => removeFromCart(e.id)}>
                   Remove
                 </button>

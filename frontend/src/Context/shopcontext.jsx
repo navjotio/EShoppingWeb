@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import Products_Data from "../Assets/productsdata";
+import PopularProducts_Data from "../Assets/PopularData";
 
 export const ShopContext = createContext(null);
 
@@ -23,7 +24,13 @@ const ShopContextProvider = (props) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
 
-  const contextValue = { Products_Data, cartItems, addToCart, removeFromCart };
+  const contextValue = {
+    Products_Data,
+    cartItems,
+    addToCart,
+    removeFromCart,
+    PopularProducts_Data,
+  };
   return (
     <ShopContext.Provider value={contextValue}>
       {props.children}
