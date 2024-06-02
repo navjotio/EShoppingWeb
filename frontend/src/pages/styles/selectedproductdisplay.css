@@ -36,6 +36,7 @@
   flex-direction: column;
   margin-top: 5rem;
   gap: 10px;
+  margin-right: 12rem;
 }
 
 .prodDisplay-imglist img {
@@ -62,4 +63,10 @@
 .rating {
   color: goldenrod;
   line-height: 2px;
+}
+
+.prodDisplay-center {
+  margin-top: 60rem;
+  margin-inline-start: -90rem;
+  margin-inline-end: 100rem;
 }

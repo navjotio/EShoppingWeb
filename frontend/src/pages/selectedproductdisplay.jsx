@@ -51,6 +51,9 @@ const SelectedProductDisplay = (props) => {
           <FaArrowRight style={{ height: "12px", width: "16px" }} />
         </button>
       </div>
+      <div className="prodDisplay-center">
+        <h1>Technical Specifications:</h1>
+      </div>
     </div>
   );
 };
