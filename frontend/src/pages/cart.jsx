@@ -13,12 +13,10 @@ export default function CartMain() {
 function CartItems() {
   const {
     Products_Data,
-    popCartItems,
     cartItems,
     removeFromCart,
     addToCart,
     getTotalCartAmount,
-    PopularProducts_Data,
   } = useContext(ShopContext);
   return (
     <div className="cartitems">

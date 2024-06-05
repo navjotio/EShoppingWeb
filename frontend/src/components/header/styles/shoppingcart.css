@@ -8,6 +8,7 @@
   --color-background-900: #212529;
   --color-red: #fa5252;
   --color-red-dark: #e03131;
+  --color-goldenrod: #daa520;
 }
 #cart {
   position: absolute;
@@ -22,14 +23,14 @@
   position: absolute;
   right: 3.2rem;
   top: 0.2rem;
-  background: goldenrod;
+  background: var(--color-goldenrod);
   width: 22px;
   height: 22px;
   border-radius: 11px;
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  padding: 1px 7px;
+  padding: 2px 2px 2px 5px;
   font-weight: 700;
   color: var(--color-primary);
 }

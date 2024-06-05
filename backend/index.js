@@ -50,3 +50,6 @@ app.post("/upload", upload.single("product"), (req, res) => {
     image_url: `http://localhost:${port}/images/${req.file.filename}`,
   });
 });
+
+// servers issues , not able to send the snapshot , forbidden by the peer
+// server issues with the internet
