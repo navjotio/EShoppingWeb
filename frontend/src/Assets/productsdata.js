@@ -5,6 +5,12 @@ import mImage4 from "./images/mImage4.png";
 import mImage5 from "./images/mImage5.png";
 import mImage6 from "./images/mImage6.png";
 import mImage7 from "./images/mImage7.png";
+import mImage8 from "./images/mImage8.png";
+import mImage9 from "./images/mImage9.png";
+import mImage10 from "./images/mImage10.png";
+import mImage11 from "./images/mImage11.png";
+import mImage12 from "./images/mImage12.png";
+
 const Products_Data = [
   {
     id: 1,
@@ -86,12 +92,144 @@ const Products_Data = [
   },
   {
     id: 7,
-    name: "JBL Bar 5.1 550-Watt",
+    name: "MacBook-Pro 14-Inch M2Max 2023",
     description:
-      "Bring everything you watch to life with 550 Watts of power and a 10' subwoofer: the driving bass of an action movie, the tension of a thriller or the beauty of a nature documentary. Built-in Chromecast and Airplay 2 lets you stream and manage online content, and Bluetooth means your streamed music sounds great, too.",
-    price: 650,
+      "The new MacBook-Pro 14-Inch 2023 raises the bar for laptop performance , with the M2 pro chip delivering incredible speed in our testing.The M2 Max is even faster, especially when it comes to graphics performance. It also includes a WI-FI 6E connection and a beefed-up HDMI port that can support up to 8K displays. ",
+    price: 2150,
     condition: "New",
     image: mImage7,
+    incart: false,
+    count: 1,
+    rating: 5,
+  },
+  {
+    id: 8,
+    name: "Razer Raptor 27 -144Hz",
+    description:
+      "Offering up to 165Hz QHD resolution, the new Raptor 27 gives you more frames to push your competitive advantage. Combined with a 1ms response time, thanks to ultra low motion blur technology, you will have an unmatched gaming exprience with sharper images and extraordinarily smooth frame rates",
+    price: 999,
+    condition: "New",
+    image: mImage8,
+    incart: false,
+    count: 1,
+    rating: 5,
+  },
+  {
+    id: 9,
+    name: "Alienware Aurora R16 Gaming Desktop ",
+    description:
+      "The Aurora R16 represents a new direction for Alienware's gaming desktops, moving away from the spaceship looks of alienware aurora R15 and those before it. R16 has a liquid-cooled Intel core i7-13700f CPU, an Nvidia GeForce RTX 4070 graphics card, 32GB of RAM and two 1TB SSDs(not RAID)",
+    price: 2799,
+    condition: "New",
+    image: mImage9,
+    incart: false,
+    count: 1,
+    rating: 5,
+  },
+  {
+    id: 10,
+    name: "Razer Blackwidow V4 pro gaming keyboard ",
+    description:
+      "Empower your play with a centerpiece htat elevates your entire setup. Enter the next phase of battlestation evolution with the ultimate mechanical gaming keyboard. Take full command with the set of features designed for advanced control, and enhance your immersion with full-blown Razer chroma RGB",
+    price: 319,
+    condition: "New",
+    image: mImage10,
+    incart: false,
+    count: 1,
+    rating: 5,
+  },
+  {
+    id: 11,
+    name: "Logitech Astro A50 X",
+    description:
+      "A50 X connects directly to your PC or mac via USB-C for immersive ultra HD audio with dolby atmos or windows sonic, game/chat mixing, Logitech G HUB customization and more. Just tap the button on your headset to switch to PC",
+    price: 499,
+    condition: "New",
+    image: mImage11,
+    incart: false,
+    count: 1,
+    rating: 5,
+  },
+  {
+    id: 12,
+    name: "Corsair Dark Core RGB pro",
+    description:
+      "Helps you win without wires, boasting sub-1ms SLIPSTREAM WIRELESS, a custom 18,000 DPI optical sensor optimized for wireless mice, and hyper-polling technology up to 1,000hz",
+    price: 129,
+    condition: "New",
+    image: mImage12,
+    incart: false,
+    count: 1,
+    rating: 5,
+  },
+  {
+    id: 13,
+    name: "Alienware Aurora R16 Gaming Desktop ",
+    description:
+      "The Aurora R16 represents a new direction for Alienware's gaming desktops, moving away from the spaceship looks of alienware aurora R15 and those before it. R16 has a liquid-cooled Intel core i7-13700f CPU, an Nvidia GeForce RTX 4070 graphics card, 32GB of RAM and two 1TB SSDs(not RAID)",
+    price: 2799,
+    condition: "New",
+    image: mImage9,
+    incart: false,
+    count: 1,
+    rating: 5,
+  },
+  {
+    id: 15,
+    name: "Alienware Aurora R16 Gaming Desktop ",
+    description:
+      "The Aurora R16 represents a new direction for Alienware's gaming desktops, moving away from the spaceship looks of alienware aurora R15 and those before it. R16 has a liquid-cooled Intel core i7-13700f CPU, an Nvidia GeForce RTX 4070 graphics card, 32GB of RAM and two 1TB SSDs(not RAID)",
+    price: 2799,
+    condition: "New",
+    image: mImage9,
+    incart: false,
+    count: 1,
+    rating: 5,
+  },
+  {
+    id: 16,
+    name: "Alienware Aurora R16 Gaming Desktop ",
+    description:
+      "The Aurora R16 represents a new direction for Alienware's gaming desktops, moving away from the spaceship looks of alienware aurora R15 and those before it. R16 has a liquid-cooled Intel core i7-13700f CPU, an Nvidia GeForce RTX 4070 graphics card, 32GB of RAM and two 1TB SSDs(not RAID)",
+    price: 2799,
+    condition: "New",
+    image: mImage9,
+    incart: false,
+    count: 1,
+    rating: 5,
+  },
+  {
+    id: 17,
+    name: "Alienware Aurora R16 Gaming Desktop ",
+    description:
+      "The Aurora R16 represents a new direction for Alienware's gaming desktops, moving away from the spaceship looks of alienware aurora R15 and those before it. R16 has a liquid-cooled Intel core i7-13700f CPU, an Nvidia GeForce RTX 4070 graphics card, 32GB of RAM and two 1TB SSDs(not RAID)",
+    price: 2799,
+    condition: "New",
+    image: mImage9,
+    incart: false,
+    count: 1,
+    rating: 5,
+  },
+  {
+    id: 18,
+    name: "Alienware Aurora R16 Gaming Desktop ",
+    description:
+      "The Aurora R16 represents a new direction for Alienware's gaming desktops, moving away from the spaceship looks of alienware aurora R15 and those before it. R16 has a liquid-cooled Intel core i7-13700f CPU, an Nvidia GeForce RTX 4070 graphics card, 32GB of RAM and two 1TB SSDs(not RAID)",
+    price: 2799,
+    condition: "New",
+    image: mImage9,
+    incart: false,
+    count: 1,
+    rating: 5,
+  },
+  {
+    id: 19,
+    name: "Alienware Aurora R16 Gaming Desktop ",
+    description:
+      "The Aurora R16 represents a new direction for Alienware's gaming desktops, moving away from the spaceship looks of alienware aurora R15 and those before it. R16 has a liquid-cooled Intel core i7-13700f CPU, an Nvidia GeForce RTX 4070 graphics card, 32GB of RAM and two 1TB SSDs(not RAID)",
+    price: 2799,
+    condition: "New",
+    image: mImage9,
     incart: false,
     count: 1,
     rating: 5,
