@@ -53,3 +53,5 @@ app.post("/upload", upload.single("product"), (req, res) => {
 
 // servers issues , not able to send the snapshot , forbidden by the peer
 // server issues with the internet
+// Servver issues with the code 9
+//

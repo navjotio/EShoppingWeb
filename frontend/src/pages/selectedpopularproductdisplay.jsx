@@ -1,13 +1,10 @@
-import { useContext } from "react";
 import ShoppingCart from "../components/header/pages/shoppingcart";
 import "./styles/selectedpopularproductdisplay.css";
 import { FaStar } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-import { ShopContext } from "../Context/shopcontext";
 
 const SelectedPopularpopularProdouctDisplay = (props) => {
   const { popularProduct } = props;
-  const { addPropToCart } = useContext(ShopContext);
   return (
     <div className="popularDisplay">
       <ShoppingCart />
@@ -63,10 +60,7 @@ const SelectedPopularpopularProdouctDisplay = (props) => {
             ${popularProduct.oldPrice}
           </h2>
         </h2>
-        <button
-          id="popularBuyID"
-          onClick={() => addPropToCart(popularProduct.id)}
-        >
+        <button id="popularBuyID">
           Cart
           <FaArrowRight style={{ height: "12px", width: "16px" }} />
         </button>

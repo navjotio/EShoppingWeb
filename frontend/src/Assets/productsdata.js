@@ -165,8 +165,7 @@ const Products_Data = [
   {
     id: 13,
     name: "Alienware Aurora R16 Gaming Desktop ",
-    description:
-      "The Aurora R16 represents a new direction for Alienware's gaming desktops, moving away from the spaceship looks of alienware aurora R15 and those before it. R16 has a liquid-cooled Intel core i7-13700f CPU, an Nvidia GeForce RTX 4070 graphics card, 32GB of RAM and two 1TB SSDs(not RAID)",
+    description: "",
     price: 2799,
     condition: "New",
     image: mImage9,
