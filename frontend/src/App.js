@@ -29,5 +29,6 @@ function App() {
     </div>
   );
 }
+// Project completion set date by the 10th of this month 
 
 export default App;

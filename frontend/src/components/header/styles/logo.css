@@ -1,12 +1,8 @@
-.logo {
-  width: 100px;
-  height: 20px;
+#logoID{
+  padding: 20px;
+  position: absolute;
+  bottom: 55.5rem;
+  right: 111rem;
 }
 
-#logoID {
-  height: 130px;
-  width: 130px;
-  position: absolute;
-  bottom: 53.8rem;
-  right: 112.5rem;
-}
+

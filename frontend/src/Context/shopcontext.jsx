@@ -12,6 +12,14 @@ const getDefaultCart = () => {
   return cart;
 };
 
+const getPopDefaultCart = () =>{ 
+  let cart = {};
+  for (let index = 0; index < PopularProducts_Data.length + 1; index++){
+    cart[index] = 0;
+  }
+  return cart
+}
+
 const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
@@ -21,9 +29,24 @@ const ShopContextProvider = (props) => {
 
   const removeFromCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+
   };
 
-  const getTotalCartAmount = () => {
+
+const getSubtotalCartAmount= ()=>{
+  let totalAmount1 = 0
+  for (const item in cartItems) {
+    if (cartItems[item] > 0) {
+      let itemInfo = Products_Data.find(
+        (product) => product.id === Number(item)
+      );
+
+      totalAmount1 += itemInfo.price * cartItems[item];
+    }
+  }
+  return totalAmount1;
+}
+  const getTotalTaxAmount = () => {
     let totalAmount = 0;
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
@@ -34,7 +57,7 @@ const ShopContextProvider = (props) => {
         totalAmount += itemInfo.price * cartItems[item];
       }
     }
-    return totalAmount;
+    return totalAmount * 13/100;
   };
 
   const getTotalCartItems = () => {
@@ -46,14 +69,16 @@ const ShopContextProvider = (props) => {
     }
     return totalItems;
   };
+
   const contextValue = {
     Products_Data,
     cartItems,
     addToCart,
     removeFromCart,
     PopularProducts_Data,
-    getTotalCartAmount,
+    getTotalTaxAmount,
     getTotalCartItems,
+    getSubtotalCartAmount,
   };
 
   return (

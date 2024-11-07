@@ -6,6 +6,7 @@ export default function CartMain() {
   return (
     <div>
       <CartItems />
+      <popularCartItems />
     </div>
   );
 }
@@ -16,7 +17,8 @@ function CartItems() {
     cartItems,
     removeFromCart,
     addToCart,
-    getTotalCartAmount,
+    getTotalTaxAmount,
+    getSubtotalCartAmount,
   } = useContext(ShopContext);
   return (
     <div className="cartitems">
@@ -76,8 +78,15 @@ function CartItems() {
           <div>
             <div className="cartitemstotalprice">
               <p>Subtotal</p>
-              <p>${getTotalCartAmount()}</p>
-              {console.log(getTotalCartAmount())}
+              <p>${getSubtotalCartAmount()}</p>
+            </div>
+            <hr />
+            <div className="cartitemstotalprice">
+            <p>Tax
+              <br/>
+              GST: 7% PST: 6%
+            </p>
+            <p>{getTotalTaxAmount()}</p>
             </div>
             <hr />
             <div className="cartitemstotalprice">
@@ -87,7 +96,7 @@ function CartItems() {
             <hr />
             <div className="cartitemstotalprice">
               <h3>Total</h3>
-              <h3>${getTotalCartAmount()}</h3>
+              <h3>${getSubtotalCartAmount() + getTotalTaxAmount()}</h3>
             </div>
           </div>
           <button id="checkoutID">Checkout</button>
@@ -103,3 +112,4 @@ function CartItems() {
     </div>
   );
 }
+

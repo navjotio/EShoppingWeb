@@ -17,7 +17,7 @@
 }
 
 #signinbtn {
-  background-color: var(--color-primary);
+  background-color: transparent;
   outline: none;
   border: none;
   color: var(--color-text);

@@ -17,7 +17,7 @@ export default function NavBar() {
     }
   });
   return (
-    <div className={activeHeader ? "navbar" : ""}>
+    <div className={activeHeader ? "navbar" : null}>
       <Logo />
       <Heading />
       <Search />

@@ -33,3 +33,4 @@ function Search() {
   );
 }
 export default Search;
+// delete the following file for the code in the stuido 
